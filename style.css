@@ -191,7 +191,7 @@ footer {
 }
 .cart-icon {
     position: fixed;
-    top: 20px;
+    top: 0px;
     right: 20px;
     cursor: pointer;
 }
