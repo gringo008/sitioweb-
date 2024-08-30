@@ -292,3 +292,61 @@ footer {
         font-size: 18px;
     }
 }
+/* Estilos generales del footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative; /* Permite el posicionamiento absoluto dentro del footer */
+}
+
+/* Contenedor del contenido del footer */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    position: relative; /* Permite que los elementos hijos sean posicionados relativamente */
+}
+
+.user-button {
+    background-color: white; /* Color de fondo blanco */
+    color: #333; /* Color del texto */
+    border: 2px solid #333; /* Borde del botón */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    position: absolute; /* Posicionamiento absoluto dentro del footer */
+    left: 10px; /* Ajusta la distancia del botón desde el borde izquierdo */
+    bottom: 10px; /* Ajusta la distancia del botón desde el borde inferior */
+}
+
+.user-button:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}
+
+.copyright {
+    font-size: 14px; /* Tamaño del texto del copyright */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* En pantallas más pequeñas, alinea los elementos verticalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    .user-button {
+        margin-top: 10px; /* Añade un margen superior para separar el botón del copyright */
+    }
+}
+
+@media (max-width: 480px) {
+    .user-button {
+        font-size: 12px; /* Ajuste del tamaño del texto en pantallas muy pequeñas */
+    }
+}
+
+
