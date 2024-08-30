@@ -210,3 +210,5 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open(whatsappUrl, '_blank');
     });
 });
+console.log(localStorage.getItem('price-pato'));
+
