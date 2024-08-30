@@ -7,51 +7,52 @@
     <title>Don Tazas</title>
 </head>
 <body>
-        
-    
-        <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-        </a>
-        
-        <script src="script.js"></script>
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://api.whatsapp.com/qr/YV6SKOTCAHSGP1" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
 
-        <header>
-            <div class="logo">Don Tazas</div>
-            <div id="cart-icon" class="cart-icon">
-                <img src="./imagenes.html/CARRITO.png" alt="Carrito de compras">
-            </div>
-            <div id="shopping-cart" class="cart">
-                <h3>Carrito de Compras</h3>
-                <div id="cart-items"></div>
-                <div id="cart-total">Total: $0</div>
-                <button id="checkout-button">Pagar</button>
-            </div>
-        </header>
-        
+    <header>
+        <div class="logo">Don Tazas</div>
+        <div id="cart-icon" class="cart-icon">
+            <img src="./imagenes.html/CARRITO.png" alt="Carrito de compras">
+            <span id="cart-count">0</span> <!-- Contador de artículos en el carrito -->
+        </div>
+    </header>
+
+    <!-- Carrito deslizante -->
+    <div id="shopping-cart" class="cart">
+        <div class="cart-header">
+            <h3>Carrito de Compras</h3>
+        </div>
+        <div id="cart-items">
+            <!-- Los artículos del carrito se generan aquí dinámicamente -->
+        </div>
+        <div id="cart-summary">
+            <div id="cart-subtotal">Subtotal: $0</div>
+            <div id="cart-total">Total: $0</div>
+            <button id="checkout-button">Pagar</button>
+        </div>
+    </div>
 
     <div class="container">
         <div class="banner">
             <div class="title">Una taza en el desayuno</div>
             <div class="detail">
                 <div class="info">
-                    <h2>OFERTAS</h2>
+                    <h2>Quien somos</h2>
                     <div class="DES">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic magnam ipsa numquam eius quis animi magni earum sequi facilis. Velit nam quod doloremque optio excepturi amet, voluptatibus porro cum enim.
+                       
+Bienvenidos a Don Tazas, donde encontrarás tazas únicas que añaden alegría y estilo a tu rutina diaria. Ofrecemos diseños para todos los gustos, desde divertidos y personalizados hasta elegantes, perfectos para cualquier ocasión. Nuestra pasión es ofrecer tazas de alta calidad que transformen tu día con un toque de personalidad.
+
+Nos apasiona ofrecer productos de alta calidad que no solo son funcionales, sino que también aportan un toque de personalidad a tu día a día. 
                     </div>
                 </div>
                 <div class="img">
-                    <img src="./imagenes.html/PANDA.jpeg" alt="Taza de Stitch">
+                    <img src="./imagenes.html/logo.webp" alt="Taza de Stitch">
                 </div>
                 <div class="opcion">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate delectus quia architecto enim quis reiciendis ratione animi saepe, vero ab eius aut officiis, labore consequatur facilis laudantium, aspernatur repellat!
-                    <br>
-                    <b>Tazón de Stitch</b> <br>
-                    <div class="ellipse" style="background-color: #0fc7e7;"></div>
-                    <div class="ellipse" style="background-color: #e4d444;"></div>
-                    <div class="ellipse" style="background-color: #c95555;"></div>
-                    <br>
-                    <button class="card">Don Tazas</button>
+                    Somos de Córdoba Capital y nos especializamos en la venta de tazas. Realizamos envíos y también ofrecemos la opción de retirar tu pedido en un punto de encuentro.
                 </div>
             </div>
         </div>
@@ -63,6 +64,7 @@
                     <div class="content">
                         <div class="title">Taza De Pato</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
@@ -70,6 +72,7 @@
                     <div class="content">
                         <div class="title">Taza De bellota</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
@@ -77,13 +80,15 @@
                     <div class="content">
                         <div class="title">Taza de bombom</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="./imagenes.html/BTS.jpeg" alt="Taza de Gato">
+                    <img src="./imagenes.html/BURBUJA.jpeg" alt="Taza de las chicas super poderosas">
                     <div class="content">
-                        <div class="title">Taza De BTS</div>
+                        <div class="title">Taza De Burbuja</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
@@ -91,6 +96,7 @@
                     <div class="content">
                         <div class="title">Taza de Homero</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
@@ -98,6 +104,7 @@
                     <div class="content">
                         <div class="title">Taza de Patricio</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
@@ -105,147 +112,149 @@
                     <div class="content">
                         <div class="title">Taza De Star wars</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="./imagenes.html/BURBUJA.jpeg" alt="Taza de Koala">
+                    <img src="./imagenes.html/BOB ESPONJA.jpeg" alt="Taza de Koala">
                     <div class="content">
-                        <div class="title">Taza de Burbuja</div>
+                        <div class="title">Taza de Bob Esponja</div>
                         <div class="price">$5000</div>
+                        <button class="add-to-cart">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="item">
+            <img src="./imagenes.html/BTS.jpeg" alt="Taza de BTS">
+            <div class="content">
+                <div class="title">Taza De BTS</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/CAPITAN AMERICA.jpeg" alt="taza de las chicas super poderosas">
+            <div class="content">
+                <div class="title">Taza De Capitan America</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/cerdito.jpeg" alt="taza de las chicas super poderosas">
+            <div class="content">
+                <div class="title">Taza de Cerdito</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/DONALD.jpeg" alt="Taza de Gato">
+            <div class="content">
+                <div class="title">Taza De Donald</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/FRASES 1.jpeg" alt="Taza de Unicornio">
+            <div class="content">
+                <div class="title">Taza de frase 1</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/FRASES 2.jpeg" alt="Taza de Bulldog">
+            <div class="content">
+                <div class="title">Taza de frase 2</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/FRASES 3.jpeg" alt="Taza de Zorro">
+            <div class="content">
+                <div class="title">Taza De Frase 3</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="./imagenes.html/FRASES 4.jpeg" alt="Taza de Koala">
+            <div class="content">
+                <div class="title">Taza de frase 4</div>
+                <div class="price">$5000</div>
+                <button class="add-to-cart">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="items">
+    <div class="item">
+        <img src="./imagenes.html/gatito.jpeg" alt="Taza de gravity falls">
+        <div class="content">
+            <div class="title">Taza De Gatito</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/hello kitty.jpeg" alt="taza de las chicas super poderosas">
+        <div class="content">
+            <div class="title">Taza De Hello Kitty</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/HOMERO PASTO.jpeg" alt="taza de las chicas super poderosas">
+        <div class="content">
+            <div class="title">Taza de Homero escondido</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/MARVEL.jpeg" alt="Taza de las chicas super poderosas">
+        <div class="content">
+            <div class="title">Taza De Marvel</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/OHANA.jpeg" alt="Taza de Unicornio">
+        <div class="content">
+            <div class="title">Taza de Ohana</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/PANDA.jpeg" alt="Taza de Bulldog">
+        <div class="content">
+            <div class="title">Taza de Panda</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./imagenes.html/patita.jpeg" alt="Taza de Zorro">
+        <div class="content">
+            <div class="title">Taza De Patita</div>
+            <div class="price">$5000</div>
+            <button class="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="list">
-        <div class="items">
-            <div class="item">
-                <img src="./imagenes/dalmata.png" alt="Taza Dálmata">
-                <div class="content">
-                    <div class="title">Taza Dálmata</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/beer.png" alt="Taza de Cerveza">
-                <div class="content">
-                    <div class="title">Taza de Cerveza</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/cat.png" alt="Taza de Gato">
-                <div class="content">
-                    <div class="title">Taza de Gato</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <!-- Añadir nuevas tazas aquí -->
-            <div class="item">
-                <img src="./imagenes/unicornio.png" alt="Taza de Unicornio">
-                <div class="content">
-                    <div class="title">Taza de Unicornio</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/bulldog.png" alt="Taza de Bulldog">
-                <div class="content">
-                    <div class="title">Taza de Bulldog</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/fox.png" alt="Taza de Zorro">
-                <div class="content">
-                    <div class="title">Taza de Zorro</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <!-- Nuevas imágenes -->
-            <div class="item">
-                <img src="./imagenes/nueva_taza_1.png" alt="Taza Nueva 1">
-                <div class="content">
-                    <div class="title">Taza Nueva 1</div>
-                    <div class="price">$6000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/nueva_taza_2.png" alt="Taza Nueva 2">
-                <div class="content">
-                    <div class="title">Taza Nueva 2</div>
-                    <div class="price">$6000</div>
-                </div>
-            </div>
-            <!-- Añade más tazas según sea necesario -->
-        </div>
-    </div>
-    <div class="list">
-        <div class="items">
-            <div class="item">
-                <img src="./imagenes/dalmata.png" alt="Taza Dálmata">
-                <div class="content">
-                    <div class="title">Taza Dálmata</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/beer.png" alt="Taza de Cerveza">
-                <div class="content">
-                    <div class="title">Taza de Cerveza</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/cat.png" alt="Taza de Gato">
-                <div class="content">
-                    <div class="title">Taza de Gato</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <!-- Añadir nuevas tazas aquí -->
-            <div class="item">
-                <img src="./imagenes/unicornio.png" alt="Taza de Unicornio">
-                <div class="content">
-                    <div class="title">Taza de Unicornio</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/bulldog.png" alt="Taza de Bulldog">
-                <div class="content">
-                    <div class="title">Taza de Bulldog</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/fox.png" alt="Taza de Zorro">
-                <div class="content">
-                    <div class="title">Taza de Zorro</div>
-                    <div class="price">$5000</div>
-                </div>
-            </div>
-            <!-- Nuevas imágenes -->
-            <div class="item">
-                <img src="./imagenes/nueva_taza_1.png" alt="Taza Nueva 1">
-                <div class="content">
-                    <div class="title">Taza Nueva 1</div>
-                    <div class="price">$6000</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="./imagenes/nueva_taza_2.png" alt="Taza Nueva 2">
-                <div class="content">
-                    <div class="title">Taza Nueva 2</div>
-                    <div class="price">$6000</div>
-                </div>
-            </div>
-            <!-- Añade más tazas según sea necesario -->
-        </div>
-    </div>
-    
-    
     <footer>
         <div class="title">Don Tazas</div>
         <ul class="menubottom">
@@ -254,11 +263,7 @@
             <li>Contacto</li>
         </ul>
     </footer>
-    
-    <!-- Botón flotante de WhatsApp -->
-    <a href="https://wa.me/qr/YV6SKOTCAHSGP1" class="whatsapp-button" target="_blank" aria-label="Chat en WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
